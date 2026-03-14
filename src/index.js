@@ -1,4 +1,4 @@
-import "./styles.css";
+import './styles.css';
 import { Todo } from './models/todo.js';
 
 
