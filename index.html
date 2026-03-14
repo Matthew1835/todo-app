@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+<script defer src="main.js"></script></head>
+<body>
+    <div id="app">
+        <!-- SIDEBAR -->
+        <aside id="sidebar">
+            <h1>My Tasks</h1>
+
+            <ul id="project-list"></ul>
+
+            <div id="new-project-form">
+                <input type="text" id="new-project-input" placeholder="New project...">
+                <button id="add-project-btn">Add</button>
+            </div>
+        </aside>
+
+        <!-- MAIN AREA -->
+        <main id="main">
+            <div id="main-header">
+                <h2 id="active-project-name"></h2>
+                <button id="add-todo-btn">+ Add Todo</button>
+            </div>
+
+            <ul id="todo-list"></ul>
+        </main>
+    </div>
+
+    <!-- MODAL -->
+    <div id="modal-overlay" class="hidden">
+        <div id="modal">
+            <button id="modal-close">X</button>
+            <h2 id="modal-title-heading"></h2>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- mobile nav -->
+    <nav id="mobile-nav">
+        <button id="mob-projects-btn">
+            <span class="icon">☰</span>
+            Projects
+        </button>
+        <button id="mob-add-btn">+</button>
+    </nav>
+
+    <!-- backdrop behind the sidebar drawer -->
+    <div id="sidebar-backdrop"></div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
