@@ -1,8 +1,15 @@
 import './styles.css';
-import { Todo } from './models/todo.js';
+import { Storage } from './storage/storage.js';
+import { renderProjects, setupProjectForm } from './ui/renderProjects.js';
+import { renderTodos, setupAddTodoBtn } from './ui/renderTodos.js';
 
+// load saved data (or create default project)
+Storage.load();
 
-const newTodo = new Todo("Title1", "a new todo", "18 Mar", "high", "no notes", "no checklist");
-console.log(newTodo)
+// render initial UI
+renderProjects();
+renderTodos();
 
-console.log("hello")
+// wire up forms and buttons
+setupProjectForm();
+setupAddTodoBtn();

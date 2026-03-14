@@ -78,13 +78,14 @@ body {
 }
 
 #new-project-input {
-    flex: 1;
+    /* flex: 1; */
     padding: 8px 10px;
     border-radius: 6px;
     border: none;
     background: #2a2a4e;
     color: #fff;
     font-size: 0.9rem;
+    width: 100%;
 }
 
 #new-project-input::placeholder {
